@@ -1,0 +1,35 @@
+.image{
+  flex: 50%;
+  height: 350px;
+  background: url(../../app/content/bg-showcase-1.jpg);
+  @include img-format;
+}
+  .row:nth-of-type(2) .image{
+    background: url(../../app/content/bg-showcase-2.jpg);
+    @include img-format;
+  }
+
+  .row:nth-of-type(3) .image{
+    background: url(../../app/content/bg-showcase-3.jpg);
+    @include img-format;
+  }
+
+
+.image-round{
+    width: 120px;
+    height: 120px;
+    background: url(../../app/content/testimonials-1.jpg);
+    @include img-format;
+    border-radius: 50%;
+    box-shadow: 0px 3px 4px $text-color-two;
+    margin-bottom: 15px;
+}
+
+  .review:nth-of-type(2) .image-round{
+      background: url(../../app/content/testimonials-2.jpg);
+      @include img-format;
+  }
+  .review:nth-of-type(3) .image-round{
+      background: url(../../app/content/testimonials-3.jpg);
+      @include img-format;
+  }
